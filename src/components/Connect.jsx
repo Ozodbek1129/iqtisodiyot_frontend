@@ -4,13 +4,13 @@ import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 import MailIcon from "@mui/icons-material/Mail";
 export default function Connect() {
   return (
-    <div className="my-10 border-2 rounded-md max-w-[1610px] mx-auto px-24 py-32 shadow-[0_0_10px_rgba(0,0,0,0.5)]">
-      <h2 className="text-[82px]">Biz bilan bog'lanish</h2>
-      <div className="flex justify-between gap-5 max-lg:flex-col">
-        <div>
+    <div className="my-10 border-2 rounded-md  mx-20 max-md:mx-10 px-10 lg:px-24 py-32 shadow-[0_0_10px_rgba(0,0,0,0.5)]">
+      <h2 className="text-[82px] max-md:text-6xl">Biz bilan bog'lanish</h2>
+      <div className="flex justify-between gap-5 max-xl:flex-col">
+        <forma >  
           <h2 className="text-[42px]">Xabar yuborish</h2>
           <div className="flex flex-col gap-5">
-            <div className="flex gap-5 w-[677px]">
+            <div className="flex gap-5 max-md:flex-col">
               <input
                 type="text"
                 placeholder="Ismingiz"
@@ -22,20 +22,22 @@ export default function Connect() {
                 className="border py-4 pl-3 bg-gray-100 w-full"
               />
             </div>
-            <input
-              type="text"
-              placeholder="Xabar"
-              className="border py-4 pl-3 bg-gray-100"
-            />
+            <div className="">
+              <input
+                type="text"
+                placeholder="Xabar"
+                className="border w-full py-4 pl-3 bg-gray-100"
+              />
+            </div>
           </div>
 
           <div className="flex justify-end mt-5">
-            <button className="bg-nav_bg text-white px-6 py-3">
+            <button type="submit" className="bg-nav_bg text-white px-6 py-3">
               Jo'natish
             </button>
           </div>
-        </div>
-        <div className="flex flex-col gap-3 text-[36px] justify-center pt-8">
+        </forma>
+        <div className="flex flex-col gap-3 text-[36px] max-md:text-2xl justify-center pt-8">
           <a href="#" className="flex items-center gap-5">
             <MailIcon className="bg-gray-100 w-[32px] h-[35]" />{" "}
             <p className="bg-gray-100 py-2 px-3">tipuniversity@mail.uz</p>

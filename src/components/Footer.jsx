@@ -24,8 +24,8 @@ export default function Footer() {
       </div>
       <ul className="grid grid-cols-7 max-lg:grid-cols-4 max-md:grid-cols-3 pl-10">
         {nav &&
-          nav.map((e) => (
-            <li className="text-[20px]">
+          nav.map((e, index) => (
+            <li key={index} className="text-[20px]">
               <Link className="text-[20px]" href={e.href}>
                 {e.title}
               </Link>
